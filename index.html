@@ -3,34 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-  <title>My Website - Home</title>
-  <!-- Link to your CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Takeoffilms LLC - Elevate Your Image</title>
+  <style>
+    /* Load Akira Super Bold (for headings) */
+    @font-face {
+      font-family: 'AkiraExpandedSuperBold';
+      src: url('AkiraExpanded-SuperBold.woff2') format('woff2'),
+           url('AkiraExpanded-SuperBold.woff') format('woff');
+    }
+
+    /* Load BebasNeue (for body, buttons, forms, etc.) */
+    @font-face {
+      font-family: 'BebasNeue';
+      src: url('BebasNeue-Regular.woff2') format('woff2'),
+           url('BebasNeue-Regular.woff') format('woff');
+    }
+
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body uses BebasNeue by default */
+    body {
+      font-family: 'BebasNeue', Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    header {
+      background-color: #111;
+      text-align: center;
+      padding: 2rem;
+    }
+    header img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba(26, 26, 26, 0.8);
+      padding: 10px 0;
+    }
+    nav a {
+      background-color: #444;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #666;
+    }
+
+    /* Main container */
+    .container {
+      padding: 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Headings use Akira, uppercase */
+    h2 {
+      font-family: 'AkiraExpandedSuperBold', sans-serif;
+      font-size: 2.5rem;
+      color: #f5f5f5;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    /* Services (Packages) */
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      width: 280px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+    }
+    .service:hover {
+      transform: scale(1.05);
+    }
+    .service img {
+      width: 100%;
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    .service h3 {
+      font-family: 'AkiraExpandedSuperBold', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #e6e6e6;
+      text-transform: uppercase;
+    }
+    .service a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      background-color: #444;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .service a:hover {
+      background-color: #666;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #bbb;
+    }
+    footer a {
+      color: #999;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-
   <!-- Header -->
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <img src="Untitled-13.png" alt="Takeoffilms Logo">
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <section>
-      <h1>Welcome to My Site</h1>
-      <p>All your body text remains in Montserrat, 
-        but your heading above is in Akira Expanded Super Bold.</p>
-    </section>
-  </main>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="red_package.html">Red Package</a>
+    <a href="gold_package.html">Gold Package</a>
+    <a href="classic_package.html">Classic Package</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h2>Our Packages</h2>
+
+    <div class="service-container">
+      <!-- Red -->
+      <div class="service">
+        <img src="red logo.png" alt="Red Logo">
+        <h3>Red Package</h3>
+        <p>2-hour shoot | 1 location | Standard VFX</p>
+        <a href="red_package.html">Select Package</a>
+      </div>
+      <!-- Gold -->
+      <div class="service">
+        <img src="yellow logo.png" alt="Gold Logo">
+        <h3>Gold Package</h3>
+        <p>Up to 4 hours | 2 locations | Standard VFX</p>
+        <a href="gold_package.html">Select Package</a>
+      </div>
+      <!-- Classic -->
+      <div class="service">
+        <img src="Untitled-13.png" alt="Classic Logo">
+        <h3>Classic Package</h3>
+        <p>Custom hours | Additional add-ons | Premium VFX</p>
+        <a href="classic_package.html">Select Package</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 My Website</p>
+    <p>Email: <a href="mailto:submissions@takeoffilms.com">submissions@takeoffilms.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/_Takeoffilms_" target="_blank">@_Takeoffilms_</a></p>
+    <p>&copy; 2024 Takeoffilms LLC</p>
   </footer>
-
 </body>
 </html>
