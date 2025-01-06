@@ -1,0 +1,54 @@
+/* style.css (in assets/css/) */
+
+/* 1) Import or declare your base fonts (if you have a body font) */
+@font-face {
+    font-family: 'AkiraExpandedSuperBold';
+    src: url('../fonts/AkiraExpanded-SuperBold.woff2') format('woff2'),
+         url('../fonts/AkiraExpanded-SuperBold.woff') format('woff');
+}
+
+/* 
+   Example: If you want to keep Montserrat as your general text, 
+   you could import it from Google Fonts or do a custom @font-face:
+*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+*/
+
+/* 2) Basic resets or global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3) Body styling (assuming Montserrat for body) */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 4) Headings in Akira Super Bold */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'AkiraExpandedSuperBold', sans-serif;
+    text-transform: uppercase; /* Make headings all caps, if desired */
+}
+
+/* Example Nav/Links styling */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background: #444;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #666;
+}
+
+/* Etc. rest of your CSS from the existing repo */
